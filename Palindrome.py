@@ -1,10 +1,10 @@
 n=int(input())
-z=n
+a=n
 s=0
-while z>0:
-    a=z%10
-    s=s*10+a
-    z=z//10
+while a>0:
+    b=a%10
+    s=s*10+b
+    a=a//10
 if s==n:
     print('True')
 else:

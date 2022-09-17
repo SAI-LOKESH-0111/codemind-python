@@ -1,6 +1,9 @@
-n=input()
-s=0
-for i in n:
-    if int(i)>s:
-        s=int(i)
-print(s)
+n = int(input())
+mx = 0
+while n>0:
+    r = n%10
+    if r>mx:
+        mx = r
+    n = n//10
+print(mx)
+        

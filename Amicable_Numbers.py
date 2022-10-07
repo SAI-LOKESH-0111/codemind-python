@@ -1,14 +1,14 @@
 n = int(input())
 m = int(input())
-ns = 0
-ms = 0
-for l in range(1,n):
-    if n%l == 0:
-        ns += l
-for k in range(1,m):
-    if m%k == 0:
-        ms += k
-if n==ms and m==ns:
+l = 0
+k = 0
+for i in range(1,n):
+    if n%i == 0:
+        l += i
+for j in range(1,m):
+    if m%j == 0:
+        k += j
+if l==m and k==n:
     print('Amicable')
 else:
     print('Not Amicable')

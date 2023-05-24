@@ -1,10 +1,10 @@
 def fun(a):
+    l=' '
     s=''
     for i in range(1,a+1):
-        s=s+(str(i))
+        s=(str(i))+l+s
     print(s)
     
 a=int(input())
-while a>0:
+for i in range(a):
     fun(a)
-    a=a-1
